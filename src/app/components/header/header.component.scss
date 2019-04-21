@@ -1,0 +1,83 @@
+// this code make the navbar inline on mobile. Without this code it will be line by line.
+
+.navbar-nav,
+.navbar-nav > li {
+  float: left !important;
+}
+ul.nav li.dropdown:hover ul.dropdown-menu{
+  display: block;
+}
+.navbar-default {
+  background-color: #2d5c88;
+}
+.navbar-default .navbar-brand {
+  color: white;
+}
+.navbar-default .navbar-nav>li>a {
+  color: white;
+}
+.navbar-nav.navbar-right:last-child {
+  margin-right: -15px !important;
+}
+.navbar-fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+.navbar-right {
+  float: right!important;
+}
+// end
+
+
+.dropdown-menu > li > a:hover {
+    background-color: #944260;
+}
+.navbar-brand1 {
+  color: #fff;
+  float: left;
+  height: 50px;
+  line-height: 20px;
+  padding: 15px 5px;
+}
+
+.active1 {
+  text-decoration: underline;
+}
+.navbar-fixed-top-mobile {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+@media only screen and (max-width: 576px) {
+}
+@media only screen and (max-width:768px) {
+  .form_search1 {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    z-index: 4
+  }
+
+  .navbar-nav {
+    margin: 1px -1px;
+  }
+}
+
+.mobile-quick-menu {
+  .active {
+    border-bottom: 2px solid #944260;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+  }
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}

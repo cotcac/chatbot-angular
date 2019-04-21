@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-9">
+      <h1>Responses</h1>
+      <input type="text">
+      <a class="btn btn-success pull-right" routerLink="create/0"> + Create new response</a>
+
+      <table class="table">
+        <thead>
+          <th>Name</th>
+          <th>keyword</th>
+          <th>Edit</th>
+          <th>Delete</th>
+        </thead>
+        <tbody app-response-item
+        *ngFor="let response of responses.data"
+        (deleteResponse)="deleteResponse($event)"
+        [response]="response">
+        </tbody>
+      </table>
+      <!-- next page -->
+      <hr>
+      <div class="btn-toolbar">
+        <button class="btn btn-success" *ngIf="responses.page > 1" (click)="nextPageFn(responses.page -1)">Prev</button>
+        <button class="btn btn-success" *ngIf="responses.nextPage" (click)="nextPageFn(responses.page + 1)">Next</button>
+    </div>
+    </div>
+  </div>
+</div>

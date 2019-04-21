@@ -1,0 +1,18 @@
+<tr>
+  <td> <a routerLink="/response/keyword/{{response.id}}">{{response.name}}</a> </td>
+  <td>
+    <ul>
+      <li *ngFor="let x of response.keywords">
+        {{x.name}}
+      </li>
+    </ul>
+  </td>
+  <td>
+      <a routerLink="/responses/create/{{response.id}}">Modify</a>
+  </td>
+  <td>
+      <button class="btn btn-xs btn-danger"
+      (click)="delete(response.id)"
+       >X</button>
+  </td>
+</tr>

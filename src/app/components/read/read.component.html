@@ -1,0 +1,15 @@
+<div class="container-fluid">
+  <div class="row">
+    <div *ngIf="post" class="col-md-9">
+      <h1>{{post.title}}</h1>
+      {{post.date | date}}
+      <hr>
+      <div [innerHTML]="post.content">
+        </div>
+    </div>
+    <div class="col-md-3">
+      <h1>Menu</h1>
+
+    </div>
+  </div>
+</div>

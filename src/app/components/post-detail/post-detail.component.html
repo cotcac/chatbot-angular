@@ -1,0 +1,5 @@
+<div *ngIf="myPost">
+ <h1>{{myPost.title}}</h1>
+  <div [innerHTML]="myPost.content"></div>
+  <a routerLink="/post-write/{{myPost._id}}">Edit</a>
+</div>

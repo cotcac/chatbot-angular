@@ -1,0 +1,27 @@
+<header>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header pull-left">
+        <a class="navbar-brand" routerLink="/">
+          LMS CHATBOT
+        </a>
+      </div>
+      <div class="myNavbar" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+        <li><a routerLink="/responses"> Responses</a></li>
+          <li *ngIf="isAuth" class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Admin
+              <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a routerLink="/post-write/0"> + Write Post</a></li>
+              <li><a (click)="logout()">
+                  <span class="glyphicon glyphicon-log-out"></span> Logout</a>
+              </li>
+            </ul>
+          </li>
+          <li *ngIf="!isAuth"><a routerLink="/login"> Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
