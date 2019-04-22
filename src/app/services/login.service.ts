@@ -17,7 +17,7 @@ export class LoginService {
   ) { }
 
   login(email:string, password:string):Observable<any> {
-    return this.http.post(this.baseUrl + '/users/login',
+    return this.http.post(this.baseUrl + '/api/users/login',
     {email, password}
     )
   }
