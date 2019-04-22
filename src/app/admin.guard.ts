@@ -6,7 +6,10 @@ import { LoginService } from './services/login.service';
   providedIn: 'root'
 })
 export class AdminGuard implements CanActivate {
-  constructor(private authService: LoginService, private router: Router){}
+  constructor(
+    private authService: LoginService,
+    private router: Router
+    ){}
   canActivate(): boolean {
     if(this.authService.isLogin){
       return true;

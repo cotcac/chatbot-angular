@@ -7,13 +7,14 @@ import { ResponsesComponent } from './components/responses/responses.component';
 import { ResponseCreateComponent } from './components/response-create/response-create.component';
 import { InsertKeywordComponent } from './components/insert-keyword/insert-keyword.component';
 import { ChatComponent } from './components/chat/chat.component';
+import { AdminGuard } from './admin.guard';
 
 const routes: Routes = [
   {path: '', component:HomeComponent},
   {path: 'login', component:LoginComponent},
-  {path: 'responses', component:ResponsesComponent},
-  {path: 'responses/create/:id', component:ResponseCreateComponent},
-  {path: 'response/keyword/:id', component:InsertKeywordComponent},
+  {path: 'responses', canActivate:[AdminGuard], component:ResponsesComponent},
+  {path: 'responses/create/:id', canActivate:[AdminGuard], component:ResponseCreateComponent},
+  {path: 'response/keyword/:id', canActivate:[AdminGuard], component:InsertKeywordComponent},
   {path: 'chat', component:ChatComponent},
   {path: '**', component:NotFoundComponent}
 ];
