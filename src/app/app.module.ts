@@ -18,6 +18,7 @@ import { ResponseItemComponent } from './components/response-item/response-item.
 import { InsertKeywordComponent } from './components/insert-keyword/insert-keyword.component';
 import { ChatComponent } from './components/chat/chat.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

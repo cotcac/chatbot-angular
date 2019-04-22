@@ -22,10 +22,7 @@ export class LoginService {
     )
   }
   getHome():Observable<any> {
-
     const a = localStorage.getItem('token')
-    console.log(a,'token');
-
     return this.http.get(this.baseUrl + '/');
   }
 
@@ -37,5 +34,9 @@ export class LoginService {
   updateAuth(){
     this.isAuth.next(!!localStorage.getItem('token'));
   }
+  // check login
+  get isLogin() {
+    return !!localStorage.getItem('token');
+ }
 
 }
