@@ -12,7 +12,7 @@
         </li>
       </ul>
       <form role="form" [formGroup]="chatForm" (ngSubmit)="onSubmit()">
-        <div class="form-group">
+        <div *ngIf="chatForm && chatForm.controls" class="form-group">
           <input type="text"
           class="form-control"
           formControlName="keyword"
