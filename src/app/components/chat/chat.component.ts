@@ -22,12 +22,10 @@ export class ChatComponent implements OnInit {
   }
 
   onSubmit(){
-    console.log('submit');
     this.submmitted = true;
     if(this.chatForm.invalid){
       return;
     }
-    console.log(this.chatForm.value);
     this.success = true;
     this.messages.push({name: 'You' , text:this.chatForm.value.keyword});
     // robot answer.
@@ -58,8 +56,6 @@ export class ChatComponent implements OnInit {
       })
     )
     this.chatForm.patchValue({keyword:''});
-    // end robot answer.
-    console.log(this.messages);
   }
   ngOnInit() {
   }
