@@ -32,7 +32,6 @@ export class LoginComponent implements OnInit {
       (res =>{
         localStorage.setItem('token', res.token);
         this.loginService.updateAuth();
-        this.router.navigate(['']);
         location.href ='/';
     }),
     (err =>{
@@ -41,6 +40,13 @@ export class LoginComponent implements OnInit {
     () => console.log('Observer got a complete notification')
   )}
   ngOnInit() {
+    if(this.loginService.isLogin){
+      console.log('login');
+      this.router.navigate(['']);
+    }else{
+      console.log('not login');
+
+    }
   }
 
 }
