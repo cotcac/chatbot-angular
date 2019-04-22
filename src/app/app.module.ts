@@ -17,7 +17,6 @@ import { PostWriteComponent } from './components/post-write/post-write.component
 import { QuillModule } from 'ngx-quill';
 import { AboutComponent } from './components/about/about.component';
 import { AnnouncementComponent } from './components/announcement/announcement.component';
-import { SearchFormComponent } from './components/search-form/search-form.component';
 import { ResponsesComponent } from './components/responses/responses.component';
 import { ResponseCreateComponent } from './components/response-create/response-create.component';
 import { ResponseItemComponent } from './components/response-item/response-item.component';
@@ -39,7 +38,6 @@ import { InsertKeywordComponent } from './components/insert-keyword/insert-keywo
     PostWriteComponent,
     AboutComponent,
     AnnouncementComponent,
-    SearchFormComponent,
     ResponsesComponent,
     ResponseCreateComponent,
     ResponseItemComponent,
