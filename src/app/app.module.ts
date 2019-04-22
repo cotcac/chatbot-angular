@@ -9,11 +9,6 @@ import { FooterComponent } from './components/footer/footer.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
-import { PostsComponent } from './components/posts/posts.component';
-import { PostsItemComponent } from './components/posts-item/posts-item.component';
-import { ReadComponent } from './components/read/read.component';
-import { PostDetailComponent } from './components/post-detail/post-detail.component';
-import { PostWriteComponent } from './components/post-write/post-write.component';
 import { QuillModule } from 'ngx-quill';
 import { AboutComponent } from './components/about/about.component';
 import { AnnouncementComponent } from './components/announcement/announcement.component';
@@ -21,6 +16,7 @@ import { ResponsesComponent } from './components/responses/responses.component';
 import { ResponseCreateComponent } from './components/response-create/response-create.component';
 import { ResponseItemComponent } from './components/response-item/response-item.component';
 import { InsertKeywordComponent } from './components/insert-keyword/insert-keyword.component';
+import { ChatComponent } from './components/chat/chat.component';
 
 @NgModule({
   declarations: [
@@ -30,18 +26,13 @@ import { InsertKeywordComponent } from './components/insert-keyword/insert-keywo
     NotFoundComponent,
     HomeComponent,
     LoginComponent,
-    PostsComponent,
-
-    PostsItemComponent,
-    ReadComponent,
-    PostDetailComponent,
-    PostWriteComponent,
     AboutComponent,
     AnnouncementComponent,
     ResponsesComponent,
     ResponseCreateComponent,
     ResponseItemComponent,
     InsertKeywordComponent,
+    ChatComponent,
   ],
   imports: [
     BrowserModule,

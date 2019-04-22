@@ -15,8 +15,6 @@ export class ResponseItemComponent implements OnInit {
     if(confirm("are you sure?")){
       this.deleteResponse.emit(id);
     }
-
-
   }
 
   ngOnInit() {
