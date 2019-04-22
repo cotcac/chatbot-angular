@@ -9,7 +9,7 @@ import { SearchService } from 'src/app/services/search.service';
 })
 export class ChatComponent implements OnInit {
   chatForm:FormGroup;
-  submmited:boolean = false;
+  submmitted:boolean = false;
   success:boolean = false;
   messages=[];
   constructor(
@@ -23,7 +23,7 @@ export class ChatComponent implements OnInit {
 
   onSubmit(){
     console.log('submit');
-    this.submmited = true;
+    this.submmitted = true;
     if(this.chatForm.invalid){
       return;
     }
@@ -39,21 +39,18 @@ export class ChatComponent implements OnInit {
             text:result.data.name
           })
         }else{
-
           if(result.data.webPages && result.data.webPages.value[0].snippet){
             this.messages.push({
               name:'Internet result',
               text:result.data.webPages.value[0].snippet,
               link:result.data.webPages.value[0].url
             })
-
           }else{
             this.messages.push({
               name:'Robot',
               text:'Oop cant find any result for that!!!'
             })
           }
-
         }
       }),
       (err=>{
