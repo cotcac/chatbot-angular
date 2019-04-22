@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  baseUrl: 'http://localhost:1337'
+  baseUrl: 'https://protected-cliffs-55140.herokuapp.com'
 };
 
 /*
