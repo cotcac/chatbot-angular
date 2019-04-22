@@ -63,14 +63,16 @@ export class InsertKeywordComponent implements OnInit {
   }
   delete(id){
     console.log(id);
-    this._keywordService.delete(id).subscribe(
-      (result=>{
-        this._getResponse(this.response_id);
-      }),
-      (err=>{
-        alert('Server error');
-      })
-    )
+    if(confirm("are you sure?")){
+      this._keywordService.delete(id).subscribe(
+        (result=>{
+          this._getResponse(this.response_id);
+        }),
+        (err=>{
+          alert('Server error');
+        })
+      )
+    }
   }
   ngOnInit() {
     this._route.paramMap.subscribe(

@@ -12,7 +12,10 @@ export class ResponseItemComponent implements OnInit {
 
   delete(id){
     console.log(id);
-    this.deleteResponse.emit(id);
+    if(confirm("are you sure?")){
+      this.deleteResponse.emit(id);
+    }
+
 
   }
 
