@@ -9,9 +9,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
-import { QuillModule } from 'ngx-quill';
 import { AboutComponent } from './components/about/about.component';
-import { AnnouncementComponent } from './components/announcement/announcement.component';
 import { ResponsesComponent } from './components/responses/responses.component';
 import { ResponseCreateComponent } from './components/response-create/response-create.component';
 import { ResponseItemComponent } from './components/response-item/response-item.component';
@@ -28,7 +26,6 @@ import { ChatComponent } from './components/chat/chat.component';
     HomeComponent,
     LoginComponent,
     AboutComponent,
-    AnnouncementComponent,
     ResponsesComponent,
     ResponseCreateComponent,
     ResponseItemComponent,
@@ -41,7 +38,6 @@ import { ChatComponent } from './components/chat/chat.component';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    QuillModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
