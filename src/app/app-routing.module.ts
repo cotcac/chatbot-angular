@@ -16,6 +16,7 @@ const routes: Routes = [
   {path: 'responses/create/:id', canActivate:[AdminGuard], component:ResponseCreateComponent},
   {path: 'response/keyword/:id', canActivate:[AdminGuard], component:InsertKeywordComponent},
   {path: 'chat', component:ChatComponent},
+  {path:'feedback', loadChildren:'./modules/feedback/feedback.module#FeedbackModule'},
   {path: '**', component:NotFoundComponent}
 ];
 

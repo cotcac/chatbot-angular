@@ -9,6 +9,7 @@
       <div class="myNavbar" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
         <li *ngIf="isAuth"><a routerLink="/responses"> Responses</a></li>
+        <li *ngIf="isAuth"><a routerLink="/feedback"> Feedback</a></li>
         <li><a routerLink="/chat"> Chat</a></li>
           <li *ngIf="isAuth" class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Admin
