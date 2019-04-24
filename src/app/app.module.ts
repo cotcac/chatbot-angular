@@ -8,7 +8,6 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { HomeComponent } from './components/home/home.component';
-import { LoginComponent } from './components/login/login.component';
 import { AboutComponent } from './components/about/about.component';
 
 
@@ -19,7 +18,6 @@ import { AboutComponent } from './components/about/about.component';
     FooterComponent,
     NotFoundComponent,
     HomeComponent,
-    LoginComponent,
     AboutComponent,
   ],
   imports: [
