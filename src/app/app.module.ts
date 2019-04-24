@@ -10,10 +10,6 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { AboutComponent } from './components/about/about.component';
-import { ResponsesComponent } from './components/responses/responses.component';
-import { ResponseCreateComponent } from './components/response-create/response-create.component';
-import { ResponseItemComponent } from './components/response-item/response-item.component';
-import { InsertKeywordComponent } from './components/insert-keyword/insert-keyword.component';
 import { ChatComponent } from './components/chat/chat.component';
 
 
@@ -26,10 +22,6 @@ import { ChatComponent } from './components/chat/chat.component';
     HomeComponent,
     LoginComponent,
     AboutComponent,
-    ResponsesComponent,
-    ResponseCreateComponent,
-    ResponseItemComponent,
-    InsertKeywordComponent,
     ChatComponent,
   ],
   imports: [

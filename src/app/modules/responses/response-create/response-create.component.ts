@@ -51,7 +51,7 @@ export class ResponseCreateComponent implements OnInit {
       .subscribe(
         (result=>{
           this.responseForm.reset();
-          this._router.navigate(['/response/keyword/'+result.id])
+          this._router.navigate(['/responses/keyword/'+result.id])
         }),
         (err=>{
           if(err.error && err.error.message){

@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Insert Keyword!</h1>
+        <form role="form" [formGroup]="keywordForm" (ngSubmit)="onSubmit()">
+            <h5 *ngIf="success">Your form is valid!</h5>
+            <div class="form-group">
+              <label for="comment">content:</label>
+              <textarea class="form-control"
+                        rows="2"
+                        required="required"
+                        formControlName="name">
+              </textarea>
+              <div *ngIf="submitted && keywordForm.controls.name.errors" class="bg-warning">
+                  <div *ngIf="keywordForm.controls.name.errors.required">this field is required</div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+          </form>
+          <div *ngIf="response">
+              <h1 class="alert alert-success">{{response.name}}</h1>
+              <ul class="list-group" *ngFor="let x of response.keywords">
+                <li class="list-group-item">
+                  {{x.name}}   <button (click)="delete(x.id)" class="btn btn-xs btn-danger pull-right">X</button>
+                </li>
+              </ul>
+          </div>
+      </div>
+    </div>
+  </div>
